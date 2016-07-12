@@ -1,18 +1,18 @@
 public class Solution {
     public List<Integer> majorityElement(int[] nums) {
-        HashMap<Integer,Integer> Hash = new HashMap<Integer,Integer>();
-        for(int i:nums){
-            if(Hash.containsKey(i)){
-                Hash.put(i,Hash.get(i)+1);
+        HashMap<Integer,Integer> hash = new HashMap<Integer,Integer>();
+        for(int i :nums){
+            if(hash.containsKey(i)){
+                hash.put(i,hash.get(i)+1);
             }
             else{
-                Hash.put(i,1);
+                hash.put(i,1);
             }
         }
-        ArrayList<Integer> Result = new ArrayList<Integer>();
-        for(Map.Entry<Integer,Integer> entry : Hash.entrySet()){
+        ArrayList<Integer,Integer> res = new ArrayList<Integer,Integer>();
+        for(Map.Entry<Integer,Integer> entry :Hash.entrySet()){
             if(entry.getValue()>nums.length/3)
-            Result.add(entry.getKey());
-        }return Result;
+            res.add(entry.getValue());
+        }return res;
     }
 }
