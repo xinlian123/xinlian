@@ -27,8 +27,8 @@ public class Solution {
                 else{
                     n.next=l1;
                     l1=l1.next;
-                }
-            }n = n.next;
+                }n = n.next;
+            }
         }return head.next;
     }
 }
