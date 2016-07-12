@@ -17,11 +17,11 @@ public class Solution {
     int j =s.length()-1;
     
     for(int i = 0;i<j;i++){
-        if(!vowList.contains[i]){
+        if(!vowList.contains(arr[i])){
             i++;
             continue;
         }
-        if(!vowList.contains[j]){
+        if(!vowList.contains(arr[j])){
             j--;
             continue;
         }
