@@ -8,7 +8,8 @@ public class Solution {
        while(n!=1){
            
            if(hash.contains(n)){
-           return false;}hash.add(n);
+           return false;}
+           hash.add(n);
            n=equalOne(n);
            
        }return true;
@@ -17,6 +18,7 @@ public class Solution {
            int sum=0;
            while(n!=0){
                sum = sum+(n%10)*(n%10);
+               n=n/10;
            }return sum;
        }
     
