@@ -12,7 +12,7 @@ public class Solution {
        {return head;}
        ListNode n =head;
        while(n!=null&n.next!=null){
-           if(n.val = n.next.val){
+           if(n.val == n.next.val){
                n = n.next.next;
            }
            else{
