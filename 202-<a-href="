@@ -7,11 +7,11 @@ public class Solution {
        HashSet<Integer> hash = new HashSet<Integer>();
        while(n!=1){
            
-           if(hash.contains(n)){
-           return false;}
+         
            hash.add(n);
            n=equalOne(n);
-           
+             if(hash.contains(n)){
+           return false;}
        }return true;
     }
        public int equalOne(int n){
