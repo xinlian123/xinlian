@@ -6,10 +6,11 @@ public class Solution {
       return false;
        HashSet<Integer> hash = new HashSet<Integer>();
        while(n!=1){
-           hash.add(n);
-           n=equalOne(n);
+           
            if(hash.contains(n)){
-           return false;}
+           return false;}hash.add(n);
+           n=equalOne(n);
+           
        }return true;
     }
        public int equalOne(int n){
