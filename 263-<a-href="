@@ -12,7 +12,7 @@ public class Solution {
         return isUgly(num);
         if(num%5==0){
         num=num/5;
-        return isUgly(num)
+        return isUgly(num);
         return false;
     }
 }
