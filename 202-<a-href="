@@ -1,0 +1,22 @@
+public class Solution {
+    public boolean isHappy(int n) {
+      if(n==1)
+      return true;
+      if(n==0)
+      return false;
+       HashSet<Integer> hash = new HashSet<Integer>();
+       while(n!=1){
+           hash.add(n);
+           n=equalOne(n);
+           if(hash.contains(n)){
+           return false;}
+       }return true;
+    }
+       public int equalOne(int n){
+           int sum=0;
+           while(n!=0){
+               sum = sum+(n%10)*(n%10);
+           }return sum;
+       }
+    
+}
