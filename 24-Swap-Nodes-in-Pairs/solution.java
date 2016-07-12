@@ -11,7 +11,7 @@ public class Solution {
         ListNode head = new ListNode(0);
      ListNode n =head;
      
-     while(head.next!=null&&head.next.next!=null){
+     while(n.next!=null&&n.next.next!=null){
          ListNode n1 = head.next, n2 = head.next.next;
          
          head.next = n2;
