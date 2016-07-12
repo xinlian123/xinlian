@@ -19,6 +19,6 @@ public class Solution {
          n2.next = n1;
          
          head = n1;
-     }return n.next;
+     }return head.next;
     }
 }
