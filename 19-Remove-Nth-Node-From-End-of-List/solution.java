@@ -11,7 +11,7 @@ public class Solution {
        if(head==null||head.next==null)
        return null;
        ListNode dummy = new ListNode(0);
-       dummy.next==head;
+       dummy.next=head;
        ListNode prev = dummy;
        for(int i=0;i<n;i++){
            head= head.next;
