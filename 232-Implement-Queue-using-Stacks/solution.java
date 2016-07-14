@@ -2,6 +2,7 @@ class MyQueue {
     // Push element x to the back of queue.
     public Stack<Integer> s1 =new Stack<>();
     public Stack<Integer> s2 =new Stack<>();
+    public int front;
     public void push(int x) {
         if(s1.isEmpty()){
             front =x;
