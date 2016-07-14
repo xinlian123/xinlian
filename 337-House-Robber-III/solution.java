@@ -22,6 +22,6 @@ public class Solution {
         int[] right = dfs(root.right);
         res[0] = root.val+left[1]+right[1];
         res[1] = Math.max(left[0],left[1])+Math.max(right[0],right[1]);
-    }    return res;
-        }
+      return res; } 
+       
 }
