@@ -16,7 +16,7 @@ public class Solution {
              
         public int[] dfs(TreeNode root){
             if(root=null)
-            int[] res  ={0,0}
+            int[] res  ={0,0};
             return res;
             int[] res = new int[2];
             int[] left = dfs(root.left);
