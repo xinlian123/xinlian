@@ -9,8 +9,8 @@ public class Solution {
         }
     }
     ArrayList<Integer> res = new ArrayList<Integer>();
-    for(Map.Entry<Integer> entry:hash.entrySet()){
-        if(hash.getValue>nums.length/3)
+    for(Map.Entry<Integer,Integer> entry:hash.entrySet()){
+        if(hash.getValue()>nums.length/3)
        res = res+ hash.getKey();
     }return res;
     }
