@@ -3,10 +3,10 @@ public class Solution {
        if(strs.length==0)
        return "";
        
-       for(int i=0;i<strs[0].length;i++){
+       for(int i=0;i<strs[0].length();i++){
            char x = strs[0].charAt(i);
            for(int j=1; j<strs.length;j++){
-               if(strs[j].length==i||strs[j].charAt(i)!=x){
+               if(strs[j].length()==i||strs[j].charAt(i)!=x){
                    return strs[0].substring(0,i);
                }
            }
