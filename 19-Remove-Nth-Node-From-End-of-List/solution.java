@@ -16,6 +16,10 @@ public class Solution {
       for(int i=0;i<n;i++){
           faster = faster.next;
       }
+      if(faster.next ==null){
+          head = head.next;
+          return head;
+      }
       while(faster!=null){
           faster = faster.next;
           slower = slower.next;
