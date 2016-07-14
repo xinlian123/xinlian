@@ -12,7 +12,7 @@ public class Solution {
              int[] res1 = dfs(root);
        return Math.max(res1[0],res1[1]);
         }
-    public int dfs(TreeNode root){
+    public int[] dfs(TreeNode root){
         if(root==null){
             int res[] = {0,0};
             return res;
