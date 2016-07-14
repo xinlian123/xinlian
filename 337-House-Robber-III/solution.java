@@ -9,7 +9,7 @@
  */
 public class Solution {
     public int rob(TreeNode root) {
-        int[] res1 = new int[];
+        int[] res1 = new int[x];
     return Math.max(res1[0],res1[1]);
         
     }
