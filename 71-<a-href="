@@ -7,7 +7,7 @@ public class Solution {
         LinkedList<String> stack = new LinkedList<String>();
         
         for(String x : s){
-            if(x.equals(".")||s.length()==0){
+            if(x.equals(".")||x.length()==0){
                 continue;
             }
             else if(x.equals("..")){
