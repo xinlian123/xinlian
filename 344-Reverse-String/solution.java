@@ -1,7 +1,7 @@
 public class Solution {
     public String reverseString(String s) {
-           char[] x = s.toCharArray();
-           int last = s.length()+1;
+             char[] x = s.toCharArray();
+           int last = s.length()-1;
            for(int i = 0; i<s.length()/2;i++){
                char temp = x[last-i];
                x[last-i] = x[i];
