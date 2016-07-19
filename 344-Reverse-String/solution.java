@@ -4,7 +4,7 @@ public class Solution {
            int last = s.length()+1;
            for(int i = 0; i<s.length()/2;i++){
                char temp = x[last-i];
-               x[last] = x[i];
+               x[last-i] = x[i];
                x[i] = temp;
            }return new String(x);
     }
