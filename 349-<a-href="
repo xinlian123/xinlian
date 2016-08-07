@@ -9,13 +9,13 @@ public class Solution {
        }
        HashSet<Integer> hash2 = new HashSet<Integer>();
        for(int j=0;i<nums2.length;i++){
-           if(hash.contains(nums[j]){
+           if(hash.contains(nums[j])){
                hash2.add(nums[j]);
            }
        }
        int[] res = new int[hash2.size()];
        for(int index : hash2){
            res[index++] = hash2;
-       }return res
+       }return res;
     }
 }
