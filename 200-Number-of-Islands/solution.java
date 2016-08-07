@@ -2,7 +2,9 @@ public class Solution {
     public int m,n;
     public int numIslands(char[][] grid) {
         m = grid.length;
+        if(m==0)return 0;
         n= grid[0].length;
+         if(n==0)return 0;
         int ans=0;
         for(int i=0;i<m;i++){
             for(int j=0; j<n;j++){
