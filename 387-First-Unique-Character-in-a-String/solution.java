@@ -10,7 +10,6 @@ public class Solution {
             c=s.charAt(i);
             if(characterhashtable.containsKey(c))
             {
-                // increment count corresponding to c
                 characterhashtable.put(  c ,  characterhashtable.get(c) +1 );
             }
             else
@@ -18,8 +17,6 @@ public class Solution {
                 characterhashtable.put( c , 1 ) ;
             }
         }
-        // Search characterhashtable in in order of string str
-        
         for (i =0 ; i < length ; i++ )
         {
             c= s.charAt(i);
@@ -28,5 +25,5 @@ public class Solution {
         }
         return -1;
     }
-            }
+ }
         
