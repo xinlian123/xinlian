@@ -1,6 +1,6 @@
 public class Solution {
     public String simplifyPath(String path) {
-        if(path.length()=0)
+        if(path.length()==0)
         return path;
         String[] s = path.split("/");
         LinkedList<String> stack = new ListedList<String>();
