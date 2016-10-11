@@ -4,9 +4,9 @@ public class MinStack {
     /** initialize your data structure here. */
   
     public void push(int x) {
-         if (minstack.isEmpty() || x <= minstack.peek())  
-            minstack.push(x);  
-        stack.push(x);  
+        if(minstack.isEmpty()||x<=minstack.peek())
+             minstack.push(x);
+            stack.push(x);
     }
     
     public void pop() {
