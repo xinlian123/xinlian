@@ -1,7 +1,6 @@
 public class Solution {
     public String simplifyPath(String path) {
-
-        i if(path.length()==0){
+ if(path.length()==0){
         return path;}
         String[] s = path.split("/");
         LinkedList<String> stack = new LinkedList<String>();
@@ -12,7 +11,8 @@ public class Solution {
         else if(x.equals("..")){
                if(!stack.isEmpty()){
                 stack.pop();
-            }}
+            }
+	}
             else{
                 stack.push(x);
             }
@@ -22,7 +22,8 @@ public class Solution {
             }
         
         String ret = "";
-        if(!stack.isEmpty()){
+	
+        while(!stack.isEmpty()){
              ret += "/" + stack.removeLast(); 
         }return ret;
 }
