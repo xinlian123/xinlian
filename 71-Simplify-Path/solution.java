@@ -4,7 +4,7 @@ public class Solution {
         if(path.length()==0)
         return path;
         String[] s = path.split("/");
-        LinkList<String> stack = new LinkList<String>();
+        LinkedList<String> stack = new LinkedList<String>();
         for(String x:s){
             if(x.equals(".")){
                 continue;
