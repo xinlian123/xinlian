@@ -8,7 +8,7 @@ public class Solution {
             if(x.equals(".")){
                 continue;
             }
-        else if(x.equals(..)){
+        else if(x.equals("..")){
                 stack.pop();
             }
             else{
