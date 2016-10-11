@@ -6,7 +6,7 @@ public class Solution {
         String[] s = path.split("/");
         LinkedList<String> stack = new LinkedList<String>();
         for(String x:s){
-            if(x.equals(".")){
+            if(x.equals(".")||x.length()==0){
                 continue;
             }
         else if(x.equals("..")){
@@ -20,7 +20,7 @@ public class Solution {
             }
         }
         String ret = null;
-        if(!stack.isEmpty){
+        if(!stack.isEmpty()){
             ret = ret+ stack.removeLast();
         }return ret;
 }
